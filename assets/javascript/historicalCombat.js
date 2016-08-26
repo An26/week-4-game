@@ -1,24 +1,31 @@
 var hero;
 var enemy;
 
-var characters= [{
-	id: 'Lincoln',
-	health: 100
+var characterList= [{
+	id: 'lincoln'
 }, {
-	id: 'Einstein',
-	health: 120
+	id: 'einstein'
 }, {
-	id: 'Susan',
-	health: 150;
+	id: 'susan'
 }, {
-	id: 'Gandhi',
-	health: 200
-}]
+	id: 'gandhi'
+}];
 
-function buildCharacters(){
-	for(var i = 0; i < characterList.length; i++){
-			$('.characterList')
-		}
-	} 
+function buildCharacters() {
+	for (var i = 0; i < characterList.length; i++) {
+		var currentCharacter = characterList[i];
+		$("#characterList").append('<div class ="character">text</div>');
+	}
+}
 
-	//builds characters... I already have them. 
+// function addClickListeners() {
+// 	$('.character').click(selectCharacter);
+// }
+
+// function selectCharacter() {
+//  console.log(this);
+// }
+
+buildCharacters();
+// addClickListeners();
+// selectCharacter();

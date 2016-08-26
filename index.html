@@ -2,74 +2,46 @@
 <html>
 <head>
 	<title>HistoricalCombat</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+	<script src="assets/javascript/historicalCombat.js"></script>
+
 </head>
-
 <body>
-<div class = "container">
-
-	<div class="jumbotron">
+<div id="container">
+	<nav class="heading">
 		<h1 class="text-center"><strong>Welcome to Historical Combat!!</strong></h1>
 		<h4 class="text-center">Rated M for Mature</h4>
-		<hr>
-		<div class="text-center">
+		
+		<div class="buttonCenter">
 		    <button class="btn btn-warning btn-xs themeButton"><span class="glyphicon glyphicon-music"></span> Play Sound Effects! </button>		  	
 	    	<button class="btn btn-default btn-xs pauseButton"><span class="glyphicon glyphicon-pause"></span> Pause the Intensity! </button>	
-		</div>
+	    </div>
+	</nav>
+
+	<hr>
+
+	<div id="characterList">
 	</div>
 
-<div class="panel panel-default characterList">
-	<div class="panel-heading">
-		<h3 class="panel-title">Choose Your Character!</h3>
-	</div>
-	<div class="panel-body">
-		<div class="text-center characterButtons">
-			<div class = "Lincoln">
-				<button class="btn btn-default btn-lg normalButton"><span class="glyphicon"></span>
-				<p>Abraham Lincoln</p>
-				<img src="assets/images/Abraham_lincoln.jpg" alt="lincoln image" height="150" width="150">
-				<p class="healthPoints">#HP</p></button>
-			</div>
 
-			<div class="Einstien">
-				<button class="btn btn-default btn-lg normalButton"><span class="glyphicon"></span>
-				<p>Albert Einstien</p>
-				<img src="assets/images/albert-einstein.jpg" alt="einstein image" height="150" width="150">
-				<p class="healthPoints">#HP</p></button>
-			</div>
-
-			<div class="susan">
-				<button class="btn btn-default btn-lg normalButton"><span class="glyphicon"></span>
-				<p>Susan B. Anthony</p>
-				<img src="assets/images/susananthony.jpg" alt="susan b anthony image" height="150" width="150">
-				<p class="healthPoints">#HP</p></button></button>
-			</div>
-			<div class="gandhi">
-				<button class="btn btn-default btn-lg normalButton"><span class="glyphicon"></span>
-				<p>Mahatma Gandhi</p>
-				<img src="assets/images/ghandi.jpg" alt="gandhi image" height="150" width="150">
-				<p class="healthPoints">#HP</p></button></button>
-			</div>
-		</div>
-	</div>
-</div>
-
-
-	<div class = "panel-body yourCharacter">
+	<div id="yourCharacter">
 		<p>Your character:</p>
 	</div>
 
-	<div class = "panel-body availibleEnemies">
+	<div id="availibleEnemies">
 		<p>Opponent:</p>
 	</div>
 
-	<div class="panel-body fight">
+	<button id="attack">Attack</button>
+
+	<div id="fight">
 		<div class="yourOpponent">
 		</div>
+		<p>Combat!</p>
 	</div>
 
 </div>
@@ -84,8 +56,8 @@
 
 //use the calculator example for this HW for on-key click actions and using jQuery to get everrything "right". -->
 
-<script src="assets/js/hangman.js"></script>
 
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
