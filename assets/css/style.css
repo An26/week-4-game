@@ -26,6 +26,7 @@ h1 {
 
 #lincoln {
 	display: inline-block;
+	margin: 10px;
 	height: 150px;
 	width: 150px;
 	background-color: seagreen;
@@ -35,6 +36,7 @@ h1 {
 
 #einstein {
 	display: inline-block;
+	margin: 10px;
 	height: 150px;
 	width: 150px;
 	background-color: olive;
@@ -44,6 +46,7 @@ h1 {
 
 #susan {
 	display: inline-block;
+	margin: 10px;
 	height: 150px;
 	width: 150px;
 	background-color: green;
@@ -53,6 +56,7 @@ h1 {
 
 #gandhi {
 	display: inline-block;
+	margin: 10px;
 	height: 150px;
 	width: 150px;
 	background-color: palegreen;

@@ -44,14 +44,12 @@ var characterList= [{
 }];
 
 
-
 function reset() {
-
 }
 
 function addClickListeners() {
 	$('.character').click(assignCharacter);
-	$('.attackButton').click(battle);
+	$('#attackButton').click(battle);
 }
 
 
@@ -77,19 +75,50 @@ function assignCharacter() {
 function buildCharacters() {
 	for (var i = 0; i < characterList.length; i++) {
 		var currentCharacter = characterList[i];	 
-		var newDiv = $("<div class='character neutral' id ="+ currentCharacter.id +"></div>").appendTo("#characterList");
+		var newDiv = $("<div class='character neutral' id ='"+ currentCharacter.id +"''></div>").appendTo("#characterList");
 		$("<div class='imgName'></div>").html(currentCharacter.name).appendTo(newDiv);
 		$("<div class='imgHealth' id ='" + currentCharacter.health + "'></div>").html("HealthPoint: " + currentCharacter.health).appendTo(newDiv);
+	}
+} 
+
+function getCharacterById(id){
+	for (var i = 0; i < characterList.length; i++){
+		if(id === characterList[i].id){
+		return characterList[i];
+		}
+	}
 }
-	} 
 
-function battle (){
-	console.log("attacking");
+function battle() {
 
+	var enemyObject = getCharacterById(enemy.attr('id'));
+	var heroObject = getCharacterById(hero.attr('id'));
+	console.log(heroObject);
+	console.log(enemyObject);
+	
+		
+	if (heroObject.health > 0){
+		console.log("my hero is alive");
+		var attackProgress = heroObject.health - enemyObject.health;
+		console.log(attackProgress);
+		
+	}
 
+	// if (hero.health < 0) {
+	// 	var html = "I'm sorry, you've lost."
+	// 	document.querySelector('.messageUser').innerHTML = html;
+	// 	reset ();
+	// }
 
+	// if (enemy.health < 0 && there's no more oopponents){
+	// 	var html = "Nice! You've won a game!"
+	// 	document.querySelector('.messageUser').innerHTML = html;	
+	// }
 
-}
+	reset();
+	return;
+};
+
 
 $(document).ready(function(){
 	buildCharacters();
