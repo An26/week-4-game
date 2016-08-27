@@ -1,27 +1,68 @@
-h1 {
-	color: green;
+body {
+	background-image: url(../images/background.jpg);
+	text-align: center;
+	color: white;
 }
 
-#characterList {
-	display: inline;
+h1 {
+	font-size: 50px;
+}
+
+#characterList div {
+	display: inline-block;
 }
 
 #lincoln {
-	height: 100px;
-	width: 100px;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background-color: seagreen;
+	background-image: url(../images/Abraham_Lincoln.jpg);
+	background-size: 150px;
 }
 
 #einstein {
-	height: 100px;
-	width: 100px;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background-color: olive;
+	background-image: url(../images/albert-einstein.jpg);
+	background-size: 175px;
 }
 
 #susan {
-	height: 100px;
-	width: 100px;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background-color: green;
+	background-image: url(../images/susananthony.jpg);
+	background-size: 150px;
 }
 
 #gandhi {
-	height: 100px;
-	width: 100px;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	background-color: palegreen;
+	background-image: url(../images/ghandi.jpg);
+	background-size: 200px;
+}
+
+
+#attackButton {
+	display: none;
+}
+
+.imgName {
+	margin-top: 0px;
+	color: #385E0F;
+	font-weight: bold;
+	background: #E0EEE0;
+}
+
+.imgHealth {
+	margin-bottom: 0px;
+	color: green;
+	font-weight: bold;
+	background-color: white;
 }

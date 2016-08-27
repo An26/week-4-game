@@ -2,13 +2,9 @@
 <html>
 <head>
 	<title>HistoricalCombat</title>
-
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 	<script src="assets/javascript/historicalCombat.js"></script>
-
 </head>
 <body>
 <div id="container">
@@ -17,31 +13,28 @@
 		<h4 class="text-center">Rated M for Mature</h4>
 		
 		<div class="buttonCenter">
-		    <button class="btn btn-warning btn-xs themeButton"><span class="glyphicon glyphicon-music"></span> Play Sound Effects! </button>		  	
-	    	<button class="btn btn-default btn-xs pauseButton"><span class="glyphicon glyphicon-pause"></span> Pause the Intensity! </button>	
+		    <button class="themeMusic"><span></span> Play Sound Effects! </button>		  	
+	    	<button class="pauseButton"><span></span> Pause the Intensity! </button>	
 	    </div>
 	</nav>
-
 	<hr>
+	<div class="messageUser"></div>
 
 	<div id="characterList">
 	</div>
 
+	<button id="attackButton">Attack</button>
 
 	<div id="yourCharacter">
 		<p>Your character:</p>
 	</div>
 
-	<div id="availibleEnemies">
+	<div id="opponent">
 		<p>Opponent:</p>
 	</div>
 
-	<button id="attack">Attack</button>
-
-	<div id="fight">
-		<div class="yourOpponent">
-		</div>
-		<p>Combat!</p>
+	<div class="otherEnemies">
+		<p class="changeUserMessage">Availible Opponents to Battle:</p>
 	</div>
 
 </div>
