@@ -1,16 +1,28 @@
-body {
+.jumbotron {
 	background-image: url(../images/background.jpg);
+	background-size: 500px;
 	text-align: center;
 	color: white;
+}
+
+
+body {
+	background-color: #781F18;
+	font-family: 'Lora', serif;
+	color: #FAE599;
+	text-align: center;
+
 }
 
 h1 {
 	font-size: 50px;
 }
 
-#characterList div {
-	display: inline-block;
+#characterList {
+	display: inline;
+	margin: 10px;
 }
+
 
 #lincoln {
 	display: inline-block;
@@ -51,6 +63,8 @@ h1 {
 
 #attackButton {
 	display: none;
+	background-color: brown;
+	margin: 20px;
 }
 
 .imgName {
@@ -61,7 +75,7 @@ h1 {
 }
 
 .imgHealth {
-	margin-bottom: 0px;
+	margin-bottom: 150px;
 	color: green;
 	font-weight: bold;
 	background-color: white;
